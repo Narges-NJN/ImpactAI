@@ -6,6 +6,7 @@ import { AiModule } from '../ai/ai.module';
 import { MemoryPhraseService } from './memory-phrase.service';
 import { MemoryPhraseSchema } from './memory-phrase.schema';
 import { MongooseModule } from '@nestjs/mongoose';
+
 @Module({
   imports: [
     AiModule,
