@@ -1,3 +1,3 @@
 # DiaCura 
 ### Professional diabetes assistant with personalized meal plans
-Llama Impact Hackathon Rome, ImpactAI team
+Project developed for Llama Impact Hackathon Rome by ImpactAI team
