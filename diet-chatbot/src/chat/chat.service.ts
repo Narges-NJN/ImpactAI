@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Injectable } from '@nestjs/common';
 import { AiService } from '../ai/ai.service';
 
@@ -5,13 +6,12 @@ import { AiService } from '../ai/ai.service';
 export class ChatService {
   constructor(private readonly aiService: AiService) {}
 
-  async handleUserInput(userInput: string, userInfo: { name: string }): Promise<string> {
+  async handleUserInput(userInput: string): Promise<string> {
     const prompt = `
-      Info Utente: ${userInfo.name}
-      Domanda: ${userInput}
+      Sei un assistente per diabetici. Rispondi gentilmente con suggerimenti utili basati sul diabete.
+      Utente: ${userInput}
+      AI:
     `;
-
-    // Genera la risposta utilizzando AiService
     return await this.aiService.generateResponse(prompt);
   }
 }

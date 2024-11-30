@@ -1,16 +1,23 @@
-import { Controller, Post, Body } from '@nestjs/common';
-import { ChatService } from './chat.service';
+/* eslint-disable prettier/prettier */
+import { Controller, Post, Get, Body, Param } from '@nestjs/common';
+import { MemoryPhraseService } from './memory-phrase.service';
 
 @Controller('chat')
 export class ChatController {
-  constructor(private readonly chatService: ChatService) {}
+  constructor(private readonly memoryPhraseService: MemoryPhraseService) {}
 
-  @Post('message')
-  async sendMessage(@Body() body: { message: string, name: string }): Promise<string> {
-    const { message, name } = body;
+  // Endpoint to add a memory phrase
+  @Post(':userId/memory-phrase')
+  async addPhrase(
+    @Param('userId') userId: string,
+    @Body('phrase') phrase: string,
+  ) {
+    return this.memoryPhraseService.addPhrase(userId, phrase);
+  }
 
-    // Passa sia il messaggio che le informazioni dell'utente
-    const response = await this.chatService.handleUserInput(message, { name });
-    return response;
+  // Endpoint to retrieve all memory phrases for a user
+  @Get(':userId/memory-phrase')
+  async getPhrases(@Param('userId') userId: string) {
+    return this.memoryPhraseService.getPhrases(userId);
   }
 }
