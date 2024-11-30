@@ -1,4 +1,4 @@
-# DiaCura <img width="30" alt="apple (4) 2 (1)" src="https://github.com/user-attachments/assets/c8784c12-911a-4cd5-9591-ae255969de79">
+![apple (4) 2 (2)](https://github.com/user-attachments/assets/432c180b-54cf-4804-96ea-c1aea51dc35d) # DiaCura 
 
 
 
