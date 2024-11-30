@@ -90,7 +90,7 @@ export class AiService implements OnModuleInit {
       }
   
       const data = await response.json();
-      //console.log('Risposta API:', data);
+      //console.log('Risposta API:', data.choices[0].message.content);
       return data.choices[0].message.content;
     } catch (error) {
       console.error('Errore durante la chiamata all’API:', error.message);
