@@ -1,4 +1,5 @@
-# DiaCura ![apple (4) 2](https://github.com/user-attachments/assets/9d81feb8-c4da-4b0a-8120-0608fdcae54b)
+# DiaCura <img width="30" alt="apple (4) 2 (1)" src="https://github.com/user-attachments/assets/c8784c12-911a-4cd5-9591-ae255969de79">
+
 
 
 ### Professional diabetes assistant with personalized meal plans
