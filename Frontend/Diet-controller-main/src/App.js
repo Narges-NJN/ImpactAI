@@ -9,10 +9,9 @@ const App = () => (
     <nav className="navbar">
       <img src={logo} alt="Logo" className="logo" />
       <div className="nav-links">
-        <a href="#how-it-works">How it works?</a>
-        <a href="#contacts">Contacts</a>
-        <a href="#faq">FAQ</a>
-      </div>
+        <a href="how-it-works">How it works?</a>
+        <a href="/contacts">Contacts</a>
+        </div>
     </nav>
 
     {/* Main Content */}
