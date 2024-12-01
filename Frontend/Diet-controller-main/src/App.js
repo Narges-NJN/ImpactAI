@@ -23,7 +23,9 @@ const App = () => (
           Get the best personalized meal plans based on your health condition
           and preferences.
         </p>
-        <button className="chat-button">Start to chat</button>
+        <a href="https://t.me/DiaCura_bot" target="_blank" rel="noopener noreferrer">
+        <button class="chat-button">Start to chat</button>
+        </a>
       </div>
       <div className="right-section">
         <p className="ai-description">
