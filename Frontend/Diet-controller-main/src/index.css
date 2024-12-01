@@ -15,10 +15,12 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  padding: 1rem 3rem; /* Add consistent padding to align the main content */
-  background-color: #fff;
+  padding: 1rem 3rem;
+  background: linear-gradient(to right, #fff 50%, #F8FDE9 50%, #EEFAD8 75%, #AFE6C2 100%);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: #00523B;
+  position: relative;
+  z-index: 2;
 }
 
 .logo {
@@ -74,15 +76,16 @@ body {
 
 .chat-button {
   background-color: #86F558;
-  color: #fff;
+  color: #00523B;
   border: none;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 3rem; 
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
-  width: fit-content;
-  color: #00523B;
-  margin-left: 1rem; /* Align with "How it works?" */
+  width: auto; 
+  min-width: 200px; 
+  text-align: center; 
+  margin-top: 1rem;
 }
 
 .chat-button:hover {
