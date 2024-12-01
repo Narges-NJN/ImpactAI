@@ -190,6 +190,7 @@ export class TelegramService implements OnModuleInit {
     
       // Evita di rispondere ai comandi come /start
       if (!userMessage.startsWith('/')) {
+        let response;
         try {
           // Invia un messaggio di attesa...
           const sentMessage = await this.bot.sendMessage(chatId, '🚀');
@@ -205,7 +206,7 @@ export class TelegramService implements OnModuleInit {
             : '\nNon ci sono frasi salvate per questo utente.';
     
           // Ottieni la risposta dal servizio ChatService
-          const response = await this.chatService.handleUserInput(userMessage, {
+          response = await this.chatService.handleUserInput(userMessage, {
             name: userName,
             history: this.chatHistory[chatId] || [], // Passa la cronologia come array vuoto se non esiste
             memory: memoryContext
@@ -262,7 +263,7 @@ export class TelegramService implements OnModuleInit {
             parse_mode: 'HTML', // Assumi che il messaggio sia in HTML
           });
         } catch (error) {
-          console.error('Errore nella generazione della risposta:', error);
+          console.error('Errore nella generazione della risposta:', error, " - ", response);
           this.bot.sendMessage(chatId, '⚠️⚠️⚠️ An error has occurred. Please try again later.');
         }
       }
