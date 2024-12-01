@@ -86,8 +86,11 @@ We prioritize user security and privacy. All data is encrypted and only accessib
 
 ## 🏗️ Future Plans  
 
-- Integration with wearable devices (e.g., CGMs, fitness trackers) for automatic data logging.  
-- Advanced analytics powered by machine learning to predict trends and recommend proactive measures.
+- Integration with wearable devices (e.g., CGMs, fitness trackers) for automatic data logging.
+- Chat on webapp, and whatsapp bot Connection to more health datas for accuracy
+- Insuring privacy policies
+- Open vision to read images and videos
+- Share links to recommended products to purchase
 
 ---
 
