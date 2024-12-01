@@ -1,99 +1,241 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# 🥗 Diet Chatbot Backend
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Welcome to the **Diet Chatbot Backend**! This project powers a chatbot designed to assist diabetes patients with dietary advice. Built using **NestJS**, this backend leverages MongoDB for storing user memory phrases and connects seamlessly to the AI model for generating responses. 🚀
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+---
 
-## Description
+## 🛠️ Features
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- 🌐 **AI-Powered Chat**: Provides tailored dietary recommendations using a connected AI model.
+- 🧠 **Memory Phrases**: Stores user-specific phrases for context-aware responses.
+- 🗂️ **MongoDB Integration**: Efficient storage of chat-related data.
+- 🔒 **Environment Variable Support**: Securely handle sensitive configuration like database connections.
 
-## Project setup
+---
+
+## 🚀 Getting Started
+
+Follow these steps to set up and run the backend locally or deploy it to your preferred platform.
+
+---
+
+### 🖥️ Prerequisites
+
+Ensure the following tools are installed:
+
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [npm](https://www.npmjs.com/)
+- [MongoDB Compass](https://www.mongodb.com/products/compass) (for local database management)
+- [Git](https://git-scm.com/)
+- [Render](https://render.com/) (optional for deployment)
+
+---
+
+### ⚙️ Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/khalmatay/ImpactAI.git
+   cd ImpactAI/diet-chatbot
+
+2.  **Install Dependencies**:
+npm install
+3. **Set Up MongoDB**:
+
+Create a MongoDB database (e.g., dietchatbot).
+Obtain the connection string from your MongoDB instance (e.g., mongodb+srv://<username>:<password>@cluster.mongodb.net/dietchatbot?retryWrites=true&w=majority).
+
+4. **Configure Environment Variables**:
+
+Create a .env file in the root directory:
+
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/dietchatbot?retryWrites=true&w=majority
+PORT=3000Set Up MongoDB:
+
+Create a MongoDB database (e.g., dietchatbot).
+Obtain the connection string from your MongoDB instance (e.g., mongodb+srv://<username>:<password>@cluster.mongodb.net/dietchatbot?retryWrites=true&w=majority).
+5. **Configure Environment Variables**:
+
+
+Create a .env file in the root directory:
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/dietchatbot?retryWrites=true&w=majority
+PORT=3000
+
+🏃 Running the Backend
+## Start the Development Server:
+
+
+npm run start:dev
+
+2.**Test Endpoints**:
+Use tools like Postman or Insomnia to test the endpoints.
+# Diet Chatbot Backend
+
+Welcome to the **Diet Chatbot Backend**! This project powers a chatbot designed to assist diabetes patients with dietary advice. Built using **NestJS**, this backend leverages MongoDB for storing user memory phrases and connects seamlessly to the AI model for generating responses.
+
+## Features
+
+- **AI-Powered Chat**: Provides tailored dietary recommendations using a connected AI model.
+- **Memory Phrases**: Stores user-specific phrases for context-aware responses.
+- **MongoDB Integration**: Efficient storage of chat-related data.
+- **Environment Variable Support**: Securely handle sensitive configuration like database connections.
+
+## Getting Started
+
+Follow these steps to set up and run the backend locally or deploy it to your preferred platform.
+
+### Prerequisites
+
+Ensure the following tools are installed:
+
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [npm](https://www.npmjs.com/)
+- [MongoDB Compass](https://www.mongodb.com/products/compass) (for local database management)
+- [Git](https://git-scm.com/)
+- [Render](https://render.com/) (optional for deployment)
+
+### Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/khalmatay/ImpactAI.git
+   cd ImpactAI/diet-chatbot
+```
+2. **Install Dependencies**:
+   ```bash
+   npm install
+```
+3. **Set Up MongoDB**:
+
+   Create a MongoDB database (e.g., dietchatbot).
+   Obtain the connection string from your MongoDB instance (e.g., mongodb+srv://<username>:<password>@cluster.mongodb.net/dietchatbot?retryWrites=true&w=majority).
+
+4. **Configure Environment Variables**:
+
+   Create a `.env` file in the root directory:
+   ```bash
+   MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/dietchatbot?retryWrites=true&w=majority
+   PORT=3000
+```
+   Replace `<username>` and `<password>` with your MongoDB credentials.
+
+## Running the Backend
+
+### Start the Development Server:
 
 ```bash
-$ npm install
+npm run start:dev
 ```
+The backend will run at http://localhost:3000.
 
-## Compile and run the project
+### Test Endpoints
 
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Run tests
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
+Use tools like Postman or Insomnia to test the endpoints.
 
 ## Deployment
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+Deploy this backend to platforms like Render.
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+## Endpoints
 
-```bash
-$ npm install -g mau
-$ mau deploy
-```
+Here’s the table for your endpoints:
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+| **Method** | **Endpoint**     | **Description**                        |
+|------------|------------------|----------------------------------------|
+| POST       | `/chat`          | Process user input and generate a reply. |
+| GET        | `/memory/:userId` | Retrieve memory phrases for a user.   |
+| POST       | `/memory`        | Save a memory phrase for a user.       |
 
-## Resources
+You can copy and paste this table into your documentation.
 
-Check out a few resources that may come in handy when working with NestJS:
+## Contributing
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+We welcome contributions to make this project even better! Fork the repository, make your changes, and submit a pull request.
 
-## Support
+## Contact
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+For any questions or feedback, feel free to reach out!
+Welcome to the **Diet Chatbot Backend**! This project powers a chatbot designed to assist diabetes patients with dietary advice. Built using **NestJS**, this backend leverages MongoDB for storing user memory phrases and connects seamlessly to the AI model for generating responses. 🚀
 
-## Stay in touch
+___
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+## 🛠️ Features
 
-## License
+- 🌐 **AI-Powered Chat**: Provides tailored dietary recommendations using a connected AI model.
+- 🧠 **Memory Phrases**: Stores user-specific phrases for context-aware responses.
+- 🗂️ **MongoDB Integration**: Efficient storage of chat-related data.
+- 🔒 **Environment Variable Support**: Securely handle sensitive configuration like database connections.
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+---
+
+## 🚀 Getting Started
+
+Follow these steps to set up and run the backend locally or deploy it to your preferred platform.
+
+---
+
+### 🖥️ Prerequisites
+
+Ensure the following tools are installed:
+
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [npm](https://www.npmjs.com/)
+- [MongoDB Compass](https://www.mongodb.com/products/compass) (for local database management)
+- [Git](https://git-scm.com/)
+- [Render](https://render.com/) (optional for deployment)
+
+---
+
+### ⚙️ Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/khalmatay/ImpactAI.git
+   cd ImpactAI/diet-chatbot
+Install Dependencies:
+
+
+npm install
+
+2. **Set Up MongoDB**:
+
+Create a MongoDB database (e.g., dietchatbot).
+Obtain the connection string from your MongoDB instance (e.g., mongodb+srv://<username>:<password>@cluster.mongodb.net/dietchatbot?retryWrites=true&w=majority).
+Configure Environment Variables:
+
+Create a .env file in the root directory:
+
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/dietchatbot?retryWrites=true&w=majority
+PORT=3000
+Replace <username> and <password> with your MongoDB credentials.
+🏃 Running the Backend
+
+## Start the Development Server:
+
+
+npm run start:dev
+The backend will run at http://localhost:3000.
+
+Test Endpoints: Use tools like Postman or Insomnia to test the endpoints.
+
+## 🌐 Deployment
+deployed this backend to platforms like Render 
+
+
+## 📜 Endpoints
+Here’s the table for your endpoints:  
+
+| **Method** | **Endpoint**     | **Description**                        |
+|------------|------------------|----------------------------------------|
+| POST       | `/chat`          | Process user input and generate a reply. |
+| GET        | `/memory/:userId` | Retrieve memory phrases for a user.   |
+| POST       | `/memory`        | Save a memory phrase for a user.       |  
+
+You can copy and paste this table into your documentation. Let me know if you need further edits!
+
+
+## 🤝 Contributing
+We welcome contributions to make this project even better! Fork the repository, make your changes, and submit a pull request. 🎉
+
+## 📧 Contact
+For any questions or feedback, feel free to reach out! ✉️
