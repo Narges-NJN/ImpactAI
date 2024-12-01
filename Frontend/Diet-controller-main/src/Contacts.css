@@ -1,0 +1,82 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+    background: linear-gradient(to right, #fff 50%, #F8FDE9 50%, #EEFAD8 75%, #AFE6C2 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #00523B;
+    position: relative;
+    z-index: 2;
+  }
+  
+  
+  
+.logo {
+    margin-left: 1rem;
+    width: 50px;
+    height: auto;
+    margin-right: 1rem;
+  }
+  
+.nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+/* Новый класс для увеличения текста и элементов */
+.large-content {
+    font-size: 2.5rem; /* Еще больший размер текста */
+    line-height: 3.5rem; /* Увеличенное межстрочное расстояние */
+    padding: 3rem; /* Пространство вокруг текста */
+  }
+  
+  .large-content .big-text-list {
+    font-size: 2.5rem; /* Еще больший размер текста в списке */
+    line-height: 3.5rem; /* Увеличенное расстояние между строками */
+    margin-left: 2.5rem; /* Отступ для маркеров */
+    color: #00523B; /* Цвет текста */
+  }
+  
+  .large-content .big-text-list li {
+    margin-bottom: 2rem; /* Пространство между пунктами списка */
+  }
+  
+  .large-content .chat-button {
+    background-color: #86F558;
+    color: #00523B;
+    border: none;
+    padding: 1.8rem 3.5rem; /* Увеличенная кнопка */
+    font-size: 2rem; /* Увеличенный текст кнопки */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .large-content .chat-button:hover {
+    background-color: #218838;
+    color: #fff;
+  }
+  
+.big-text-list {
+    font-family: "Italiana", serif; /* Используем шрифт Italiana */
+    font-weight: 400; /* Толщина шрифта */
+    font-size: 100px; /* Размер текста */
+    line-height: 75.0px; /* Межстрочное расстояние */
+    color: #00523B; /* Цвет текста */
+    margin-left: 2rem; /* Отступ слева для маркеров */
+    list-style-type: disc; /* Маркеры в виде точек */
+    font-size: 4rem; /* Make it prominent */
+    font-weight: bold;
+  }
+  
+.big-text-list li {
+    margin-bottom: 1.5rem; /* Расстояние между пунктами */
+  }
+  
