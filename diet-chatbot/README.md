@@ -60,6 +60,9 @@ Obtain the connection string from your MongoDB instance (e.g., mongodb+srv://<us
 Create a .env file in the root directory:
 MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/dietchatbot?retryWrites=true&w=majority
 PORT=3000
+AI_API_KEY=
+TELEGRAM_BOT_TOKEN=
+ASSISTANT_NAME=DiaCura
 
 🏃 Running the Backend
 ## Start the Development Server:

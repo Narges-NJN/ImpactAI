@@ -59,7 +59,9 @@ export class AiService implements OnModuleInit {
       const fullPromptAgent = `
         ${this.assistantContent}
 
-        Informazioni sugli alimenti:
+        YOU MUST GIVE SHORT ANSWERS, DO NOT LEAVE SPACES, DO NOT GO ON MULTIPLE LINES AND DO NOT MAKE LISTS. THEY MUST BE COMPACT MESSAGES!!!
+
+        DATASET:
         ${this.foodData}
       `;
   
